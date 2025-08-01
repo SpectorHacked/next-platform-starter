@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "63e96c21-c251-41fb-98f7-30b3bbd2270d"
+      }
+    },
+    "android": {
+      "package": "com.spectorhacked.nextnetlifyplatformstarter"
+    }
+  }
+}
