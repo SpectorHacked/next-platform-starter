@@ -7,7 +7,7 @@ export default function Home() {
             Save Now, Watch When It Makes Sense
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
-            Queue videos and articles with one tap — we'll offer them back at the right time, when you're free and looking for something worthwhile.
+            Queue videos and articles with one tap — we&apos;ll offer them back at the right time, when you&apos;re free and looking for something worthwhile.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-blue-600 hover:bg-gray-50 text-lg px-8 py-4 rounded-lg font-medium">
@@ -48,7 +48,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Smart Timing</h3>
               <p className="text-gray-600 leading-relaxed">
-                We understand when you're between tasks or just browsing aimlessly. We quietly offer a saved video or article — no pushy nudges.
+                We understand when you&apos;re between tasks or just browsing aimlessly. We quietly offer a saved video or article — no pushy nudges.
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">Seamless Handoff</h3>
               <p className="text-gray-600 leading-relaxed">
-                Save on Chrome. View on mobile. Or the other way around — it's all synced.
+                Save on Chrome. View on mobile. Or the other way around — it&apos;s all synced.
               </p>
             </div>
 
