@@ -3,14 +3,14 @@ export default function Privacy() {
     <div className="min-h-screen bg-white py-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-[#323338] mb-4">Privacy Policy</h1>
-          <p className="text-lg text-[#676879]">Last updated: January 2024</p>
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Privacy Policy</h1>
+          <p className="text-lg text-gray-600">Last updated: January 2024</p>
         </div>
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-[#323338] mb-4">Introduction</h2>
-            <p className="text-[#676879] leading-relaxed mb-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Introduction</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
               At QueueUp, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website services.
             </p>
           </section>
