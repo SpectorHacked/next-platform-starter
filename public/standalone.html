@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueueUp - Standalone Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-white">
+        <!-- Header -->
+        <header class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+            <div class="max-w-6xl mx-auto flex h-16 items-center justify-between px-4">
+                <div class="flex items-center space-x-2">
+                    <div class="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-lg">
+                        <span class="text-white font-bold">Q</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">QueueUp</span>
+                </div>
+
+                <nav class="flex items-center space-x-8">
+                    <a href="#privacy" class="text-sm font-medium text-gray-600 hover:text-gray-800">Privacy Policy</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <button class="text-sm font-medium text-gray-600 hover:text-gray-800 px-4 py-2">Log in</button>
+                    <button class="bg-blue-600 text-white hover:bg-blue-700 text-sm font-medium px-4 py-2 rounded-lg">Get Started</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-600 to-cyan-400 py-20 md:py-32">
+            <div class="max-w-6xl mx-auto px-4 relative z-10">
+                <div class="max-w-4xl mx-auto text-center text-white">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Smart content management that learns your schedule
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+                        Add videos, articles, podcasts, and more to your queue. QueueUp analyzes your calendar and suggests the perfect time to consume your content.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-white text-blue-600 hover:bg-gray-50 text-lg px-8 py-4 rounded-lg font-medium transition-colors">
+                            Get Started Free
+                        </button>
+                        <button class="border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4 rounded-lg font-medium transition-colors">
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        How QueueUp Works
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Three simple steps to transform how you consume content
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Add Content</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Use our mobile app or Chrome extension to quickly add videos, articles, podcasts, and books to your queue from anywhere.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">AI Analysis</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Our AI analyzes your calendar, preferences, and free time patterns to understand when you're most likely to engage with content.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Smart Suggestions</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Get personalized notifications when you have the perfect window to consume specific content based on duration and type.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Types Section -->
+        <section class="py-20">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                        Support for All Your Content
+                    </h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        From quick reads to deep dives, manage every type of content in one place
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 text-red-500 mx-auto mb-4">
+                            <svg fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Videos</h3>
+                        <p class="text-gray-600 text-sm">YouTube, educational content, tutorials, and entertainment</p>
+                    </div>
+
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 text-blue-600 mx-auto mb-4">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Articles</h3>
+                        <p class="text-gray-600 text-sm">Blog posts, news, research papers, and long-form content</p>
+                    </div>
+
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 text-green-600 mx-auto mb-4">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 9A2 2 0 004 10.414v3.172a2 2 0 001.586 1.414l2.828 2.828A2 2 0 0010 17.414V6.586a2 2 0 00-1.586-1.414L5.586 9z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Podcasts</h3>
+                        <p class="text-gray-600 text-sm">Episodes, interviews, educational series, and audio content</p>
+                    </div>
+
+                    <div class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 text-orange-500 mx-auto mb-4">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Books</h3>
+                        <p class="text-gray-600 text-sm">E-books, audiobooks, chapters, and reading materials</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gray-800">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                        Ready to Take Control of Your Content Queue?
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Join thousands of users who have transformed their content consumption with smart scheduling and AI-powered suggestions.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                        <button class="bg-blue-600 text-white hover:bg-blue-700 text-lg px-8 py-4 rounded-lg font-medium transition-colors">
+                            Start Free Trial
+                        </button>
+                        <button class="border-2 border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-gray-800 text-lg px-8 py-4 rounded-lg font-medium transition-colors">
+                            Schedule Demo
+                        </button>
+                    </div>
+
+                    <div class="flex items-center justify-center space-x-2 text-sm text-gray-400">
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span>Free 14-day trial • No credit card required</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
