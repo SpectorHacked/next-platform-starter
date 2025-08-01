@@ -1,0 +1,1 @@
+// TypeScript types converted to JSDoc for JavaScript
