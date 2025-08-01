@@ -1,6 +1,4 @@
 import '../styles/globals.css';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
 
 export const metadata = {
     title: 'QueueUp - Smart Content Queue Management',
@@ -15,9 +13,7 @@ export default function RootLayout({ children }) {
                 <script src="https://cdn.tailwindcss.com"></script>
             </head>
             <body className="antialiased">
-                <Header />
-                <main>{children}</main>
-                <Footer />
+                {children}
             </body>
         </html>
     );

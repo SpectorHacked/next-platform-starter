@@ -1,30 +1,40 @@
-import { Button } from '../components/ui/Button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/Card'
-import { Play, BookOpen, Headphones, FileText, Clock, Brain, Smartphone, Chrome, Calendar, Star } from 'lucide-react'
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#0073ea] via-[#0073ea] to-[#00c3f5] py-20 md:py-32">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Smart content management that learns your schedule
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
-              Add videos, articles, podcasts, and more to your queue. QueueUp analyzes your calendar and suggests the perfect time to consume your content.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-[#0073ea] hover:bg-gray-50 text-lg px-8 py-4 h-auto">
-                Get Started Free
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-4 h-auto">
-                Watch Demo
-              </Button>
-            </div>
+      <div className="bg-gradient-to-br from-blue-600 via-blue-600 to-cyan-400 py-20 md:py-32">
+        <div className="max-w-4xl mx-auto text-center text-white px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Smart content management that learns your schedule
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
+            Add videos, articles, podcasts, and more to your queue. QueueUp analyzes your calendar and suggests the perfect time to consume your content.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-blue-600 hover:bg-gray-50 text-lg px-8 py-4 rounded-lg font-medium">
+              Get Started Free
+            </button>
+            <button className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-4 rounded-lg font-medium">
+              Watch Demo
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              How QueueUp Works
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Three simple steps to transform how you consume content
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
       <section className="py-20 bg-[#f6f7fb]">
         <div className="container mx-auto px-4">
