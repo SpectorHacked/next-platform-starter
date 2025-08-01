@@ -1,9 +1,6 @@
-'use client'
-
 import { Button } from '../components/ui/Button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/Card'
 import { Play, BookOpen, Headphones, FileText, Clock, Brain, Smartphone, Chrome, Calendar, Star } from 'lucide-react'
-import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
@@ -11,35 +8,20 @@ export default function Home() {
       <section className="relative overflow-hidden bg-gradient-to-br from-[#0073ea] via-[#0073ea] to-[#00c3f5] py-20 md:py-32">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-4xl md:text-6xl font-bold mb-6 leading-tight"
-            >
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Smart content management that learns your schedule
-            </motion.h1>
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed"
-            >
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed">
               Add videos, articles, podcasts, and more to your queue. QueueUp analyzes your calendar and suggests the perfect time to consume your content.
-            </motion.p>
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-[#0073ea] hover:bg-gray-50 text-lg px-8 py-4 h-auto">
                 Get Started Free
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 text-lg px-8 py-4 h-auto">
                 Watch Demo
               </Button>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -56,12 +38,7 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-center"
-            >
+            <div className="text-center">
               <div className="w-16 h-16 bg-[#0073ea] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Play className="h-8 w-8 text-white" />
               </div>
@@ -69,14 +46,9 @@ export default function Home() {
               <p className="text-[#676879] leading-relaxed">
                 Use our mobile app or Chrome extension to quickly add videos, articles, podcasts, and books to your queue from anywhere.
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-center"
-            >
+            <div className="text-center">
               <div className="w-16 h-16 bg-[#00c3f5] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Brain className="h-8 w-8 text-white" />
               </div>
@@ -84,14 +56,9 @@ export default function Home() {
               <p className="text-[#676879] leading-relaxed">
                 Our AI analyzes your calendar, preferences, and free time patterns to understand when you&apos;re most likely to engage with content.
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-center"
-            >
+            <div className="text-center">
               <div className="w-16 h-16 bg-[#ff6b35] rounded-full flex items-center justify-center mx-auto mb-6">
                 <Clock className="h-8 w-8 text-white" />
               </div>
@@ -99,7 +66,7 @@ export default function Home() {
               <p className="text-[#676879] leading-relaxed">
                 Get personalized notifications when you have the perfect window to consume specific content based on duration and type.
               </p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
