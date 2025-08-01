@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'QueueUp - Smart Content Queue Management',
@@ -23,8 +24,8 @@ export default function RootLayout({ children }) {
                         </div>
 
                         <nav className="flex items-center space-x-8">
-                            <a href="/" className="text-sm font-medium text-gray-600 hover:text-gray-800">Home</a>
-                            <a href="/privacy" className="text-sm font-medium text-gray-600 hover:text-gray-800">Privacy Policy</a>
+                            <Link href="/" className="text-sm font-medium text-gray-600 hover:text-gray-800">Home</Link>
+                            <Link href="/privacy" className="text-sm font-medium text-gray-600 hover:text-gray-800">Privacy Policy</Link>
                         </nav>
 
                         <div className="flex items-center space-x-4">
