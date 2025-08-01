@@ -48,7 +48,7 @@ export default function SimplePage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-4">AI Analysis</h3>
               <p className="text-gray-600">
-                Our AI analyzes your calendar, preferences, and free time patterns to understand when you're most likely to engage with content.
+                Our AI analyzes your calendar, preferences, and free time patterns to understand when you&apos;re most likely to engage with content.
               </p>
             </div>
 
