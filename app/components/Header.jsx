@@ -17,40 +17,42 @@ export default function Header() {
     return (
         <>
             <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
-                <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-4">
-                    {/* Logo - Hidden on mobile */}
-                    <div className="hidden md:flex items-center space-x-2">
-                        <div className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-lg">
-                            <span className="text-white font-bold">Q</span>
+                <div className="max-w-6xl mx-auto px-4">
+                    {/* Desktop Layout */}
+                    <div className="hidden md:flex h-16 items-center justify-between">
+                        {/* Logo */}
+                        <div className="flex items-center space-x-2">
+                            <div className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-lg">
+                                <span className="text-white font-bold">Q</span>
+                            </div>
+                            <span className="text-xl font-bold text-gray-800">QueueUp</span>
                         </div>
-                        <span className="text-xl font-bold text-gray-800">QueueUp</span>
+
+                        {/* Desktop Navigation */}
+                        <nav className="flex items-center space-x-8">
+                            <Link href="/" className="text-sm font-medium text-gray-600 hover:text-gray-800">Home</Link>
+                            <Link href="/privacy" className="text-sm font-medium text-gray-600 hover:text-gray-800">Privacy Policy</Link>
+                        </nav>
+
+                        {/* Desktop Buttons */}
+                        <div className="flex items-center space-x-4">
+                            <button className="text-sm font-medium text-gray-600 hover:text-gray-800 px-4 py-2">Log in</button>
+                            <button className="bg-blue-600 text-white hover:bg-blue-700 text-sm font-medium px-4 py-2 rounded-lg">Get Started</button>
+                        </div>
                     </div>
 
-                    {/* Mobile: Empty div to push hamburger to the right */}
-                    <div className="md:hidden"></div>
-
-                    {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center space-x-8">
-                        <Link href="/" className="text-sm font-medium text-gray-600 hover:text-gray-800">Home</Link>
-                        <Link href="/privacy" className="text-sm font-medium text-gray-600 hover:text-gray-800">Privacy Policy</Link>
-                    </nav>
-
-                    {/* Desktop Buttons */}
-                    <div className="hidden md:flex items-center space-x-4">
-                        <button className="text-sm font-medium text-gray-600 hover:text-gray-800 px-4 py-2">Log in</button>
-                        <button className="bg-blue-600 text-white hover:bg-blue-700 text-sm font-medium px-4 py-2 rounded-lg">Get Started</button>
+                    {/* Mobile Layout - Only hamburger */}
+                    <div className="md:hidden flex h-16 items-center justify-end">
+                        <button 
+                            className="flex flex-col items-center justify-center w-6 h-6 space-y-1"
+                            onClick={toggleMobileMenu}
+                            aria-label="Toggle mobile menu"
+                        >
+                            <span className={`block w-5 h-0.5 bg-gray-600 transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                            <span className={`block w-5 h-0.5 bg-gray-600 transition-opacity duration-200 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
+                            <span className={`block w-5 h-0.5 bg-gray-600 transition-transform duration-200 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+                        </button>
                     </div>
-
-                    {/* Mobile Hamburger Button */}
-                    <button 
-                        className="md:hidden flex flex-col items-center justify-center w-6 h-6 space-y-1"
-                        onClick={toggleMobileMenu}
-                        aria-label="Toggle mobile menu"
-                    >
-                        <span className={`block w-5 h-0.5 bg-gray-600 transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-                        <span className={`block w-5 h-0.5 bg-gray-600 transition-opacity duration-200 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-                        <span className={`block w-5 h-0.5 bg-gray-600 transition-transform duration-200 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
-                    </button>
                 </div>
             </header>
 
