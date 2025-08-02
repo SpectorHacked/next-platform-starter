@@ -43,8 +43,8 @@ export default function Header() {
                 </div>
             </header>
 
-            {/* Mobile Header - Completely Transparent */}
-            <div className="md:hidden sticky top-0 z-50 w-full">
+            {/* Mobile Header - Blue Background */}
+            <div className="md:hidden sticky top-0 z-50 w-full bg-blue-600">
                 <div className="px-4">
                     <div className="flex h-16 items-center justify-end">
                         <button 
