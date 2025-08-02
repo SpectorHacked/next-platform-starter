@@ -18,13 +18,16 @@ export default function Header() {
         <>
             <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
                 <div className="max-w-6xl mx-auto flex h-16 items-center justify-between px-4">
-                    {/* Logo */}
-                    <div className="flex items-center space-x-2">
+                    {/* Logo - Hidden on mobile */}
+                    <div className="hidden md:flex items-center space-x-2">
                         <div className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-lg">
                             <span className="text-white font-bold">Q</span>
                         </div>
                         <span className="text-xl font-bold text-gray-800">QueueUp</span>
                     </div>
+
+                    {/* Mobile: Empty div to push hamburger to the right */}
+                    <div className="md:hidden"></div>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-8">
