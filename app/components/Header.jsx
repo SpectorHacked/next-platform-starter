@@ -16,10 +16,10 @@ export default function Header() {
 
     return (
         <>
-            <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
+            {/* Desktop Header */}
+            <header className="hidden md:block sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur">
                 <div className="max-w-6xl mx-auto px-4">
-                    {/* Desktop Layout */}
-                    <div className="hidden md:flex h-16 items-center justify-between">
+                    <div className="flex h-16 items-center justify-between">
                         {/* Logo */}
                         <div className="flex items-center space-x-2">
                             <div className="flex items-center justify-center w-8 h-8 bg-blue-600 rounded-lg">
@@ -40,17 +40,21 @@ export default function Header() {
                             <button className="bg-blue-600 text-white hover:bg-blue-700 text-sm font-medium px-4 py-2 rounded-lg">Get Started</button>
                         </div>
                     </div>
+                </div>
+            </header>
 
-                    {/* Mobile Layout - Only hamburger */}
-                    <div className="md:hidden flex h-16 items-center justify-end">
+            {/* Mobile Header - Transparent */}
+            <header className="md:hidden sticky top-0 z-50 w-full">
+                <div className="max-w-6xl mx-auto px-4">
+                    <div className="flex h-16 items-center justify-end">
                         <button 
                             className="flex flex-col items-center justify-center w-6 h-6 space-y-1"
                             onClick={toggleMobileMenu}
                             aria-label="Toggle mobile menu"
                         >
-                            <span className={`block w-5 h-0.5 bg-gray-600 transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
-                            <span className={`block w-5 h-0.5 bg-gray-600 transition-opacity duration-200 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-                            <span className={`block w-5 h-0.5 bg-gray-600 transition-transform duration-200 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+                            <span className={`block w-5 h-0.5 bg-white transition-transform duration-200 ${isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+                            <span className={`block w-5 h-0.5 bg-white transition-opacity duration-200 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
+                            <span className={`block w-5 h-0.5 bg-white transition-transform duration-200 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
                         </button>
                     </div>
                 </div>
